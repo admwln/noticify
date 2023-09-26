@@ -72,6 +72,9 @@ h1 {
   letter-spacing: 0em;
 }
 
+h2 {
+  border-bottom: 5;
+}
 
 main>section.left {
   width: calc(60% - 50px);
