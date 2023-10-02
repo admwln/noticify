@@ -1,0 +1,288 @@
+:root {
+  --red: #fa6262;
+  --blue: #cae9f2;
+  --bg-gray: #fbfbfb;
+  --dark-gray: #1e1e1d;
+  --yellow: #fffacc;
+  --green: #e2efc7;
+  --pink: #efc7c7;
+  --font-color: #000;
+  --blue-solid: #a1dbed;
+  --green-solid: #d4eda1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  font-family: "Poppins";
+  margin: 0;
+}
+
+/* Header------------------------- */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  padding: 1rem 3rem;
+}
+
+header > section.right {
+  width: 100%;
+  font-weight: 800;
+  padding: 0 1rem;
+}
+
+header > section.right > a {
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 1.2rem;
+}
+
+header > section.right > a:first-of-type {
+  margin-right: 0.75rem;
+}
+
+header > section.left {
+  padding: 0 1rem;
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--red);
+}
+/* Main--------------------------------- */
+main {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  gap: 3rem;
+  padding: 1rem 3rem;
+}
+
+h1,
+h2 {
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+  line-height: 3rem;
+  letter-spacing: 0rem;
+}
+
+h2 {
+  border-bottom: 5;
+}
+
+main > section.left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  /* flex-wrap: wrap; */
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+main section.left.cards {
+  /* width: 100%; */
+}
+
+div.card {
+  width: calc(100%);
+  padding: 2rem 3rem 4rem 3rem;
+  background-color: var(--bg-gray);
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0.2rem 0.25rem 0.75rem 0 #0000001a;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  line-height: 2.5rem;
+  letter-spacing: 0;
+}
+
+div.card > p,
+span,
+button {
+  font-family: "Inter";
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.card > p {
+  margin: 0;
+  line-height: 1.7rem;
+  letter-spacing: 0em;
+}
+
+span {
+  display: inline-block;
+  font-size: 1rem;
+  color: var(--dark-gray);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0.5rem 0 0;
+}
+
+.blue {
+  background-color: var(--blue);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.pink {
+  background-color: var(--pink);
+}
+
+.green {
+  background-color: var(--green);
+}
+
+.arrow-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.card .arrow-container {
+  width: 2.6rem;
+  height: 2.6rem;
+  background-color: var(--red);
+}
+
+.card .arrow-container path {
+  fill: white;
+}
+
+.arrow-container > svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Right column------------------------------------ */
+
+main > section.right {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+main > section.right > p {
+  font-family: "Inter";
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 1.25rem 0;
+  line-height: 1.9rem;
+  letter-spacing: 0rem;
+}
+
+button {
+  text-align: start;
+  padding: 0 0 0 2rem;
+  width: 13rem;
+  height: 3rem;
+  background: none;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0.25rem 0.25rem 0.4rem 0 #0000000a;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+button:first-of-type {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+button > .arrow-container {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+}
+
+button > .arrow-container > svg > path {
+  fill: var(--dark-gray);
+}
+
+button > .arrow-container.blue {
+  background-color: var(--blue-solid);
+}
+
+button > .arrow-container.green {
+  background-color: var(--green-solid);
+}
+
+/* Media queries------------------- */
+@media (min-width: 450px) {
+  html {
+    font-size: 14px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header > section.left {
+    width: 50%;
+  }
+
+  header > section.right {
+    width: 50%;
+    text-align: end;
+  }
+}
+
+@media (min-width: 850px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  main > section.left {
+    width: calc(35% - 4rem);
+  }
+  main > section.right {
+    width: calc(65% - 4rem);
+  }
+  main > section.left {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  div.card {
+    width: calc(50% - 1rem);
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}

@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   margin: 0;
 }
 
@@ -29,21 +29,21 @@ header {
   padding: 25px 95px;
 }
 
-header>section.right {
+header > section.right {
   font-size: 16px;
   font-weight: 800;
 }
 
-header>section.right>a {
+header > section.right > a {
   text-decoration: none;
   color: var(--font-color);
 }
 
-header>section.right>a:first-of-type {
+header > section.right > a:first-of-type {
   margin-right: 30px;
 }
 
-header>section.left {
+header > section.left {
   font-size: 36px;
   font-weight: 800;
   color: var(--red);
@@ -57,9 +57,8 @@ main {
   padding: 0 50px 25px 50px;
 }
 
-
-
-h1, h2 {
+h1,
+h2 {
   /* font-family: 'Poppins'; */
   font-weight: 800;
 }
@@ -76,7 +75,7 @@ h2 {
   border-bottom: 5;
 }
 
-main>section.left {
+main > section.left {
   width: calc(60% - 50px);
   display: flex;
   flex-direction: row;
@@ -89,7 +88,6 @@ main section.left.cards {
   width: 800px;
 }
 
-
 div.card {
   width: calc(50% - 30px);
   /* width: 347px; */
@@ -99,8 +97,7 @@ div.card {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 3px 4px 12px 0px #0000001A;
-
+  box-shadow: 3px 4px 12px 0px #0000001a;
 }
 
 h2 {
@@ -110,13 +107,15 @@ h2 {
   letter-spacing: 0em;
 }
 
-div.card>p, span, button {
-  font-family: 'Inter';
+div.card > p,
+span,
+button {
+  font-family: "Inter";
   font-size: 16px;
   font-weight: 400;
 }
 
-.card>p {
+.card > p {
   margin: 0;
   line-height: 24px;
   letter-spacing: 0em;
@@ -157,27 +156,26 @@ span {
   width: 42px;
   height: 42px;
   background-color: var(--red);
-
 }
 
 .card .arrow-container path {
   fill: white;
 }
 
-.arrow-container>svg {
+.arrow-container > svg {
   max-width: 100%;
   max-height: 100%;
 }
 
 /* Right column------------------------------------ */
 
-main>section.right {
+main > section.right {
   width: 500px;
   padding: 0 20px;
 }
 
-main>section.right>p {
-  font-family: 'Inter';
+main > section.right > p {
+  font-family: "Inter";
   font-size: 24px;
   font-weight: 400;
   margin: 25px 0;
@@ -191,11 +189,11 @@ button {
   width: 195px;
   height: 50px;
   background: none;
-	border: none;
+  border: none;
   border-radius: 15px;
-	cursor: pointer;
-	outline: none;
-  box-shadow: 4px 4px 6px 0px #0000000A;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 4px 4px 6px 0px #0000000a;
   position: relative;
 }
 
@@ -203,21 +201,20 @@ button:first-of-type {
   margin-right: 20px;
 }
 
-button>.arrow-container {
-  width: 50px;
+button > .arrow-container {
+  width: auto;
   height: 50px;
   border-radius: 15px;
 }
 
-button>.arrow-container> svg>path {
+button > .arrow-container > svg > path {
   fill: var(--dark-gray);
 }
 
-button>.arrow-container.blue {
+button > .arrow-container.blue {
   background-color: var(--blue-solid);
 }
 
-button>.arrow-container.green {
+button > .arrow-container.green {
   background-color: var(--green-solid);
 }
-
