@@ -31,13 +31,13 @@ header {
   flex-direction: column;
   justify-content: space-evenly;
   gap: 0.5rem;
-  padding: 1rem 3rem;
+  padding: 1rem 1.5rem;
 }
 
 header > section.right {
   width: 100%;
   font-weight: 800;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 
 header > section.right > a {
@@ -51,7 +51,7 @@ header > section.right > a:first-of-type {
 }
 
 header > section.left {
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   width: 100%;
   font-size: 2.5rem;
   font-weight: 800;
@@ -63,7 +63,7 @@ main {
   flex-direction: column-reverse;
   justify-content: space-around;
   gap: 3rem;
-  padding: 1rem 3rem;
+  padding: 1rem 1.5rem;
 }
 
 h1,
@@ -76,7 +76,7 @@ h1 {
   margin: 0;
   padding: 0;
   line-height: 3rem;
-  letter-spacing: 0rem;
+  letter-spacing: 0;
 }
 
 h2 {
@@ -87,14 +87,8 @@ main > section.left {
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
-  /* flex-wrap: wrap; */
   gap: 2rem;
-  padding: 0 1rem;
-}
-
-main section.left.cards {
-  /* width: 100%; */
+  padding: 0 0.5rem;
 }
 
 div.card {
@@ -181,7 +175,7 @@ span {
 
 main > section.right {
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 
 main > section.right > p {
